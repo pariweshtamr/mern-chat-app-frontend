@@ -16,7 +16,7 @@ const Login = () => {
   const [error, setError] = useState(false)
   const [email, setEmail] = useState("")
   const [loading, setLoading] = useState(false)
-  const [password, setPassword] = useState("testPassword.7")
+  const [password, setPassword] = useState("")
   const { isFetching, err, dispatch } = useContext(AuthContext)
 
   const handleOnSubmit = async (e) => {
