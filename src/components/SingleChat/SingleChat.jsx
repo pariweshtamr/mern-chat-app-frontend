@@ -20,7 +20,6 @@ import UpdateGroupChatModal from "../UpdateGroupChatModal/UpdateGroupChatModal"
 import { io } from "socket.io-client"
 import { useRef } from "react"
 import { AuthContext } from "../../context/AuthContext/AuthContext"
-import Lottie from "react-lottie"
 import animationData from "../../assets/typing.json"
 
 const ENDPOINT =
@@ -204,17 +203,7 @@ const SingleChat = () => {
               </div>
             )}
             <FormControl onKeyDown={sendMessage} isRequired mt={3}>
-              {isTyping ? (
-                <div className="">
-                  <Lottie
-                    options={defaultOptions}
-                    width={70}
-                    style={{ marginBottom: 15, marginLeft: 0 }}
-                  />
-                </div>
-              ) : (
-                <></>
-              )}
+              {isTyping ? <div className="">Typing...</div> : <></>}
               <Input
                 placeholder="Enter a message..."
                 variant="filled"

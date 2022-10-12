@@ -1,5 +1,3 @@
-import { Box } from "@chakra-ui/react"
-import { ChatState } from "../../context/ChatContext"
 import { UserListItemStyles } from "./UserListItemStyles"
 
 const UserListItem = ({ foreignUser, handleFunction }) => {

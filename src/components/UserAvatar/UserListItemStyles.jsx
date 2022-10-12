@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const UserListItemStyles = styled.div`
-width: 100%;
-margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 
-.userChat {
+  .userChat {
     padding: 10px;
     margin: 0 5px;
     display: flex;
@@ -35,4 +35,5 @@ margin-top: 10px;
         color: gray;
       }
     }
+  }
 `
