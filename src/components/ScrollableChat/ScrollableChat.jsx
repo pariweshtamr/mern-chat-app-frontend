@@ -1,13 +1,12 @@
 import { Avatar, Tooltip } from "@chakra-ui/react"
 import { useContext } from "react"
-import ScrollableFeed from "react-scrollable-feed"
 import { isLastMessage, isSameSender } from "../../config/ChatLogic"
 import { AuthContext } from "../../context/AuthContext/AuthContext"
 
 const ScrollableChat = ({ messages }) => {
   const { user } = useContext(AuthContext)
   return (
-    <ScrollableFeed>
+    <div>
       {messages &&
         messages.map((m, i) => (
           <div
@@ -54,7 +53,7 @@ const ScrollableChat = ({ messages }) => {
             </span>
           </div>
         ))}
-    </ScrollableFeed>
+    </div>
   )
 }
 

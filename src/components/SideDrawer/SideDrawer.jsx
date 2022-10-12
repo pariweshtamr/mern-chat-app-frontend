@@ -32,7 +32,6 @@ import ChatLoading from "../ChatLoading/ChatLoading"
 import { AuthContext } from "../../context/AuthContext/AuthContext"
 import { getSender } from "../../config/ChatLogic"
 import { BadgedButton } from "@react-md/badge"
-import { Effect } from "react-notification-badge"
 import { logoutUser } from "../../api/authApi"
 
 const SideDrawer = () => {
