@@ -126,9 +126,7 @@ const SideDrawer = () => {
         <div>
           <Menu>
             <MenuButton p={1}>
-              <BadgedButton id="notifications">
-                {notification?.length}
-              </BadgedButton>
+              <BadgedButton>{notification?.length}</BadgedButton>
 
               <BellIcon mr={2} fontSize="2xl" color="gold" />
             </MenuButton>
