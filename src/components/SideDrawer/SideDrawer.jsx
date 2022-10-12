@@ -31,7 +31,7 @@ import { createChat } from "../../api/chatApi"
 import ChatLoading from "../ChatLoading/ChatLoading"
 import { AuthContext } from "../../context/AuthContext/AuthContext"
 import { getSender } from "../../config/ChatLogic"
-import NotificationBadge from "react-notification-badge"
+import { BadgedButton } from "@react-md/badge"
 import { Effect } from "react-notification-badge"
 import { logoutUser } from "../../api/authApi"
 
@@ -127,10 +127,9 @@ const SideDrawer = () => {
         <div>
           <Menu>
             <MenuButton p={1}>
-              <NotificationBadge
-                count={notification.length}
-                effect={Effect.scale}
-              />
+              <BadgedButton id="notifications">
+                {notification?.length}
+              </BadgedButton>
 
               <BellIcon mr={2} fontSize="2xl" color="gold" />
             </MenuButton>
