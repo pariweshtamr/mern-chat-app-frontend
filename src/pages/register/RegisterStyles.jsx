@@ -13,6 +13,7 @@ export const FormContainer = styled.div`
     gap: 2rem;
     background-color: #f6f6f6;
     padding: 0.5rem;
+
     .form-inputs {
       display: flex;
       flex-direction: column;

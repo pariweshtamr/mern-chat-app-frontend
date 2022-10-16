@@ -10,23 +10,30 @@ export const HomeStyles = styled.div`
   justify-content: center;
   align-items: flex-start;
 
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    .logoImg {
-      height: 4.5rem;
+  .box {
+    margin: 160px auto 15px auto;
+
+    @media screen and (max-width: 600px) {
+      margin: 60px auto;
     }
-    .logoText {
-      color: #000;
-      font-weight: 500;
-      font-size: 2rem;
-      text-transform: uppercase;
-      span {
-        color: #2679bc;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      .logoImg {
+        height: 4.5rem;
+      }
+      .logoText {
+        color: #000;
         font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+        span {
+          color: #2679bc;
+          font-weight: 500;
+        }
       }
     }
   }

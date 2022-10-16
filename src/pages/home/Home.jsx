@@ -29,13 +29,7 @@ const Home = () => {
   return (
     <HomeStyles>
       <Container maxW="xl" centerContent>
-        <Box
-          bg="#f6f6f6"
-          w="100%"
-          p={4}
-          borderRadius="lg"
-          m="160px auto 15px auto"
-        >
+        <Box bg="#f6f6f6" w="100%" p={4} borderRadius="lg" className="box">
           <div className="brand">
             <img className="logoImg" src={logo} alt="logo" />
             <h1 className="logoText">
